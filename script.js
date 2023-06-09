@@ -19,7 +19,7 @@ const promises = [
 
 async function callFn() {
 	const start = new Date();
-	res.innerHTML +=`<tr id="loading"><td colspan=2>Loading</td></tr>`
+	res.innerHTML +=`<tr id="loading"><td colspan=2>Loading...</td></tr>`
 
 	await Promise.all(promises).then((result) =>{
 		res.innerHTML = ``;
